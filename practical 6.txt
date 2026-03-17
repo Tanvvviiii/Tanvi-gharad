@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scholarship Seminar Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 20px;
+        }
+        form {
+            width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 2px solid #4CAF50;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .inline {
+            width: auto;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>Scholarship Seminar Registration Form</h2>
+
+    <!-- Personal Details -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name:
+            <input type="text" name="fullname" required>
+        </label>
+
+        <label>Email:
+            <input type="email" name="email" required>
+        </label>
+
+        <label>Phone Number:
+            <input type="tel" name="phone">
+        </label>
+    </fieldset>
+
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender</legend>
+
+        <label>
+            <input type="radio" name="gender" value="male" class="inline"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" class="inline"> Female
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other" class="inline"> Other
+        </label>
+    </fieldset>
+
+    <!-- Education -->
+    <fieldset>
+        <legend>Educational Details</legend>
+
+        <label>Highest Qualification:
+            <select name="qualification">
+                <option value="">--Select--</option>
+                <option>High School</option>
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+                <option>PhD</option>
+            </select>
+        </label>
+
+        <label>Field of Study:
+            <input type="text" name="field">
+        </label>
+    </fieldset>
+
+    <!-- Interests -->
+    <fieldset>
+        <legend>Areas of Interest</legend>
+
+        <label>
+            <input type="checkbox" name="interest" value="science" class="inline"> Science
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="technology" class="inline"> Technology
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="arts" class="inline"> Arts
+        </label>
+        <label>
+            <input type="checkbox" name="interest" value="business" class="inline"> Business
+        </label>
+    </fieldset>
+
+    <!-- Seminar Selection -->
+    <fieldset>
+        <legend>Seminar Details</legend>
+
+        <label>Select Seminar Date:
+            <input type="date" name="date">
+        </label>
+
+        <label>Mode of Attendance:
+            <select name="mode">
+                <option value="">--Select--</option>
+                <option>Online</option>
+                <option>Offline</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
